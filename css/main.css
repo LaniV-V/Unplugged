@@ -104,6 +104,8 @@ body {
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding:0;
 }
  
 a {
@@ -116,6 +118,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
  
 }
  
@@ -198,6 +201,7 @@ address {
       width: 60%;
       font-size: 1.125em;
       font-weight: 700;
+      text-transform: uppercase;
     }
 
    header nav ul {
@@ -206,6 +210,10 @@ address {
       width: 100%;
     }
 
+    header nav ul li {
+      font-size: 1.125em;
+    }
+    
     footer {
       flex-direction: column;
       text-align: center;
@@ -399,17 +407,19 @@ address {
       justify-content: center;
       align-items: center;
       flex-flow: row wrap;
-      width: 55%;
       margin: 50px 0 0 0;
    }
    .faq  h2 {
       margin-bottom: 40px;
+      line-height: 1;
    }
 
    .faq-content {
       margin-bottom: 50px;
   }
-  
+  .faq-content h4 {
+    line-height: 1.333;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -527,22 +537,29 @@ address {
       width: 100% ;
       justify-content: space-between ;
   }
-
+  header figure {
+    width: 30%;
+  }
   header nav {
       width: 20% ;
   }
-
   header nav ul { 
       justify-content: space-between;
-
   }
-
   .header-divider { 
       display: none;
   }
 
   /* Hero Area */
-
+  .hero-area {
+    min-height: 600px;
+  }
+  
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+}
   /* Aside */
   aside .content-wrapper {
       margin: 50px 0;
@@ -559,6 +576,9 @@ address {
 
   /* Features */
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
   .features article {
       display: flex;
       justify-content: center;
@@ -566,11 +586,12 @@ address {
       flex-flow: column wrap;
       flex-basis: 50%;
   }
-
   .features .features-item-description {
       width: 62% ;
   }
-
+   .features i {
+      margin-bottom: 30px;
+  }
   /* Reviews */
   .reviews article {
       display: flex;
@@ -579,7 +600,7 @@ address {
   .reviews h2 {
       width: 85%;
   }
-  .reviews article div {
+  .reviews article div, .reviews article figure {
       width: 49%;        
   }
   .reviews h3  {
@@ -597,13 +618,10 @@ address {
       align-items: center;
       flex-direction: row;
   }
-  .footer-contact {
+  footer .contact {
        margin-bottom: 0;
   }
 
-  footer .contact {
-      margin-bottom: 0;
-  }
   footer h4 {
       font-size: 1.5em;
       margin-bottom: 40px;
@@ -629,18 +647,21 @@ address {
       width: 45%;
   }
   .map figure {
-    padding-bottom: 45.5%;
+      padding-bottom: 45.5%;
   }
   .contact-section .content-wrapper h2 {
       width: 80%;
   }
 
   .contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
   }
-/*==============================================================
+  .contact-content h4 {
+      font-size: 1.5em;
+  }
+*==============================================================
 ++++++++++++++++++++++++++++FAQ page++++++++++++++++++++++++++++
 ================================================================*/
 
@@ -687,7 +708,7 @@ p {
 }
   /* Hero */
  .hero-area h1 {
-     width: 60%;
+     width: 80%;
      font-size: 3.75em; 
  }
 
@@ -700,6 +721,9 @@ p {
  aside .content-wrapper .form {
      width: 30%;
  }
+ .form-description p {
+  font-size: 1.125em;
+}
 
  /* Features */
  .features h2 {
@@ -713,13 +737,13 @@ p {
  /* Reviews */ 
 
  .reviews h2 {
-  padding-bottom: 50px; 
+    padding-bottom: 50px; 
 }
  .reviews article div {
      width: 42%;
  }
  footer h4 {
-  font-size: 1.875em;
+    font-size: 1.875em;
 }
 /* ==========================================================================
 About Page
@@ -735,8 +759,6 @@ About Page
  .contact-content h4 {
       font-size: 1.875em;
   }
-
-}
 /* ==========================================================================
 FAQ Page
 ========================================================================== */
@@ -749,7 +771,7 @@ FAQ Page
       font-size: 1.125em;
       line-height: 1;
   }
-
+ }
 
     
 
