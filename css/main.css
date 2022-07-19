@@ -97,7 +97,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: left;
+  text-align: center;
   color: #e2e3ed;
 }
  
@@ -294,7 +294,7 @@ address {
   input[type=button] {
      width: 100%;
       padding: 20px 0;
-       margin-top: 20px;
+      margin-top: 20px;
       background-color: #2a423a;
       font-family: 'Poppins', Helvetica, Arial,   sans-serif;
       font-weight: 500;
@@ -362,32 +362,35 @@ address {
    .mission {
       background-color: #527158;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-around;
+      align-items: space-between;
       flex-flow: row wrap;
    }
     .map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 125%; 
-    overflow: hidden;
-    position: relative;
+      width: 100%;
+      height: 0; 
+      padding-bottom: 125%; 
+      overflow: hidden;
+      position: relative;
 }
  
     .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+      width: 100%;
+      height: 100%;
+      position: absolute; 
+      top: 0; 
+      left: 0;
+      overflow: hidden;
 }
    .contact-section {
       background-color: #2a423a;
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content:center;
+      align-items: space-between;
       flex-flow: row wrap;
    }
+   .contact h2 {padding-top: 2em;
+  }
    .contact-content p {
       margin: 0;
    }
@@ -398,14 +401,14 @@ address {
       background-color: #527158;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: space-between;
       flex-flow: row wrap;  
    }
 
    .faq .content-wrapper  {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      align-items: space-between;
       flex-flow: row wrap;
       margin: 50px 0 0 0;
    }
@@ -418,7 +421,7 @@ address {
       margin-bottom: 50px;
   }
   .faq-content h4 {
-    line-height: 1.333;
+      line-height: 1.333;
   }
 
 /* ==========================================================================
@@ -619,7 +622,7 @@ address {
       flex-direction: row;
   }
   footer .contact {
-       margin-bottom: 0;
+       margin-bottom: 0px;
   }
 
   footer h4 {
@@ -638,28 +641,31 @@ address {
 
   .mission-content {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
-      padding-top: 20px
+      padding-top: 15px
+      
   }
 
   .mission-content p {
-      width: 45%;
+      width: 40%;
   }
   .map figure {
       padding-bottom: 45.5%;
   }
   .contact-section .content-wrapper h2 {
-      width: 80%;
+      width: 85%;
   }
 
   .contact-content {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: space-between;
+      text-align: left;
   }
   .contact-content h4 {
       font-size: 1.5em;
+      text-align: center;
   }
 *==============================================================
 ++++++++++++++++++++++++++++FAQ page++++++++++++++++++++++++++++
@@ -752,12 +758,18 @@ About Page
   padding-bottom: 37.5%;
 }
  .mission h2,
+
  .contact-section .content-wrapper h2 {
-     width: 95%;
+     width: 90%;
      font-size: 3em;
+     text-align: center;
+    
  }
  .contact-content h4 {
       font-size: 1.875em;
+      text-align: center;  
+  }
+  .section-wrapper { padding-bottom: 20px;
   }
 /* ==========================================================================
 FAQ Page
