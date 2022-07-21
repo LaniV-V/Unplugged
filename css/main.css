@@ -97,7 +97,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
-  text-align: center;
+  text-align: left;
   color: #e2e3ed;
 }
  
@@ -343,7 +343,8 @@ address {
       background-color: #2a423a;
       display: flex;
       justify-content: center;
-      flex-flow: row wrap
+      flex-flow: row wrap;
+      
   }
    .reviews h2 {
       margin-bottom: 40px;
@@ -351,8 +352,9 @@ address {
   }
 
   .reviews h3 {
-      width: 55%;
+      width: 100%;
       margin: 20px 0;
+     
   }
 
  /*=============================================================
@@ -362,8 +364,8 @@ address {
    .mission {
       background-color: #527158;
       display: flex;
-      justify-content: space-around;
-      align-items: space-between;
+      justify-content: center;
+      align-items: center;
       flex-flow: row wrap;
    }
     .map figure {
@@ -386,7 +388,7 @@ address {
       background-color: #2a423a;
       display: flex;
       justify-content:center;
-      align-items: space-between;
+      align-items: center;
       flex-flow: row wrap;
    }
    .contact h2 {padding-top: 2em;
@@ -401,14 +403,14 @@ address {
       background-color: #527158;
       display: flex;
       justify-content: center;
-      align-items: space-between;
+      align-items: center;
       flex-flow: row wrap;  
    }
 
    .faq .content-wrapper  {
       display: flex;
-      justify-content: space-between;
-      align-items: space-between;
+      justify-content: center;
+      align-items: center;
       flex-flow: row wrap;
       margin: 50px 0 0 0;
    }
@@ -421,6 +423,7 @@ address {
       margin-bottom: 50px;
   }
   .faq-content h4 {
+      font-size: 1.125em ;
       line-height: 1.333;
   }
 
@@ -641,31 +644,33 @@ address {
 
   .mission-content {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      padding-top: 15px
+      padding-top: 20px
       
   }
 
   .mission-content p {
-      width: 40%;
+      width: 45%;
   }
   .map figure {
       padding-bottom: 45.5%;
   }
   .contact-section .content-wrapper h2 {
-      width: 85%;
+      width: 80%;
   }
-
+h2 { padding-bottom: 25px;
+  }
   .contact-content {
       display: flex;
       justify-content: space-between;
-      align-items: space-between;
-      text-align: left;
+      align-items: flex-start;
+     
+     
   }
   .contact-content h4 {
       font-size: 1.5em;
-      text-align: center;
+    
   }
 *==============================================================
 ++++++++++++++++++++++++++++FAQ page++++++++++++++++++++++++++++
@@ -757,19 +762,13 @@ About Page
 .map figure {
   padding-bottom: 37.5%;
 }
- .mission h2,
-
+ .mission h2 
  .contact-section .content-wrapper h2 {
-     width: 90%;
-     font-size: 3em;
-     text-align: center;
-    
+     font-size: 3em; 
+     width: 95%  
  }
  .contact-content h4 {
-      font-size: 1.875em;
-      text-align: center;  
-  }
-  .section-wrapper { padding-bottom: 20px;
+      font-size: 1.875em;  
   }
 /* ==========================================================================
 FAQ Page
