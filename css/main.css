@@ -408,9 +408,16 @@
     align-items: center;
     flex-flow: row wrap;
   }
+  .section-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
   
   .contact-content p {
     margin: 0;
+  }
+  h2 {
+    text-align:center;
   }
   
   /* ==========================================================================
@@ -701,21 +708,29 @@
       padding-bottom: 45.5%;
     }
   
-    .contact-section .content-wrapper h2 {
+    .contact-section 
+    .content-wrapper h2 {
       width: 80%;
+
     }
-    h2 {padding-bottom: 20px;
+    h2 {padding: 20px 0;
     }
   
     .contact-content {
       display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      justify-content:space-between;
+      align-items: flex-start; 
     }
-  
+    
     .contact-content h4 {
       font-size: 1.5em;
+      padding-top: 15px;
     }
+    .contact-section p {
+      padding-bottom: 30px;
+        
+    }
+    
   
     /* ==========================================================================
      FAQ Page
